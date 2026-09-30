@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound() { return <div className="mx-auto max-w-2xl py-20 text-center"><div className="font-mono text-xs text-[var(--faint)]">404</div><h1 className="mt-3 text-4xl font-semibold">Record not found</h1><p className="mt-3 text-sm leading-6 text-[var(--muted)]">The archive does not contain a public record at this address.</p><Link className="mt-6 inline-flex rounded-md border border-[var(--line-strong)] px-4 py-2 text-sm hover:bg-[var(--surface-2)]" href="/">Return home</Link></div>; }

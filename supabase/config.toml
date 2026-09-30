@@ -1,0 +1,29 @@
+project_id = "abandix"
+
+[api]
+enabled = true
+port = 54321
+
+[db]
+port = 54322
+major_version = 17
+
+[studio]
+enabled = true
+port = 54323
+
+[auth]
+enabled = true
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["http://localhost:3000/auth/callback"]
+
+[storage]
+enabled = true
+file_size_limit = "15MiB"
+
+[analytics]
+enabled = false
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed/0001_demo.sql"]

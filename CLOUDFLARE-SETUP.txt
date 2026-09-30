@@ -1,0 +1,13 @@
+ABANDIX CLOUDFLARE WORKERS
+
+This repository is intended to be cloned with the repository root as the Cloudflare Build Root Directory.
+
+Cloudflare Workers Builds:
+Build command: npm install && npm run cloudflare-build
+Deploy command: npx wrangler deploy
+Root directory: /
+
+IMPORTANT: upload the CONTENTS of this folder to the GitHub repository root.
+Do not upload this ZIP file itself and do not put the project inside a nested folder.
+
+The GitHub repository root must visibly contain package.json, wrangler.jsonc, src/, public/, and supabase/.

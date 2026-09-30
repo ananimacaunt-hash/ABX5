@@ -1,0 +1,3 @@
+"use client";
+import { useEffect } from "react";
+export default function GlobalError({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) { useEffect(() => { console.error(error); }, [error]); return <div className="mx-auto max-w-2xl py-20 text-center"><div className="text-xs uppercase tracking-[0.16em] text-[var(--danger)]">Unexpected error</div><h1 className="mt-3 text-3xl font-semibold">The record could not be loaded.</h1><p className="mt-3 text-sm leading-6 text-[var(--muted)]">Try again without losing the current URL.</p><button onClick={() => reset()} className="mt-6 rounded-md border border-[var(--line-strong)] px-4 py-2 text-sm hover:bg-[var(--surface-2)]">Try again</button></div>; }

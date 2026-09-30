@@ -1,0 +1,10 @@
+ABANDIX CLOUDFLARE BUILD
+
+The Cloudflare Workers Build settings should point to the repository root:
+
+Root directory: /
+Build command: npm run cloudflare-build
+Deploy command: npx wrangler deploy
+
+The repository root MUST contain package.json, wrangler.jsonc, src/, and supabase/.
+Do not place the project inside an extra nested folder.

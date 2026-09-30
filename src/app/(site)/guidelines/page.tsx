@@ -1,0 +1,5 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = { title: "Guidelines" };
+export default function GuidelinesPage() {
+  return <article className="mx-auto max-w-3xl py-8"><div className="text-xs uppercase tracking-[0.16em] text-[var(--faint)]">Community guidelines</div><h1 className="mt-3 text-4xl font-semibold tracking-[-0.04em]">Document, don't exploit.</h1><div className="mt-7 grid gap-6 text-base leading-8 text-[var(--muted)]"><p>Abandix supports documentation, historical research, photography, source citation and corrections.</p><p>Do not publish instructions for bypassing security, disabling cameras, defeating locks, evading law enforcement, entering through specific vulnerabilities or damaging property.</p><p>Separate direct observations from claims made by other sources. When using another person's material, preserve attribution and link to the original source instead of copying the work in full.</p><p>Do not use Abandix reputation as a measure of how dangerous or difficult an exploration was. Contribution credit is based on useful documentation.</p></div></article>;
+}
